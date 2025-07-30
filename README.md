@@ -123,6 +123,7 @@ fastapi
 uvicorn
 torch
 pydantic
+python-multipart
 ```
 Install with:
 ```bash
