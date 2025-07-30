@@ -6,7 +6,7 @@ async def load_and_inspect(file: UploadFile):
     path = await file_utils.save_upload(file)
 
     # Load PyTorch model
-    model = torch.load(path, map_location="cpu")
+    model = torch.load(path, map_location="cpu", weights_only=False)
     model.eval()
 
     # Get readable list of layers
@@ -16,7 +16,7 @@ async def load_and_inspect(file: UploadFile):
 async def extract_features(file: UploadFile):
     path = await file_utils.save_upload(file)
 
-    model = torch.load(path, map_location="cpu")
+    model = torch.load(path, map_location="cpu", weights_only=False)
     model.eval()
 
     # Dummy example: return parameter count
