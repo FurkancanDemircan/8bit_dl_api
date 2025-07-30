@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.routes import model_routes
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Deep Learning Model API",
