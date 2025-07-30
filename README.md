@@ -19,7 +19,7 @@ It supports model inspection and feature extraction.
 
 ```bash
 # Clone project
-git clone https://github.com/your-username/8bit_dl_api.git
+git clone https://github.com/FurkancanDemircan/8bit_dl_api.git
 cd 8bit_dl_api
 
 # Create virtual environment (optional)
